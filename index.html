@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rock Paper Scissor GAME</title>
+	<link rel="stylesheet" type="text/css" href="rcs.css">
+	
+</head>
+<body>
+	<h2>Rock Paper Scissor</h2>
+	<div class="container">
+		<div class="first">
+			<div id="playername" style="color: aqua;"><strong>PLAYER's SCORE</strong></div>
+			<div id="playerscore">0</div>
+		</div>
+		<div class="second">
+			<div style="color: aqua;" ><strong>COMPUTER's SCORE</strong></div>
+			<div id="computerscore">0</div>
+		</div>
+	</div>
+	<div class="table">
+		<table>
+			<tr>
+				<th id="playerid"><em>Player's move</em></th>
+				<th><em>Computer's move</em></th>
+			</tr>
+			<tr>
+				<td id="playervalue"><strong>Not Chosen</strong></td>
+				<td id="computervalue"><strong>Not Chosen</strong></td>
+			</tr>
+		</table>
+	</div>
+	<div id="main">
+		<div id="move">
+			<h3 id="head"><strong>Choose your move</strong></h3>
+			
+		</div>
+		<div id="option">
+			<p class="moves">Moves Left: <span id="turns">10</span></p>
+			<div id="content">
+				<button onclick="rock(0)">Rock</button>
+				<button onclick="paper(1)">Paper</button>
+				<button onclick="scissor(2)">Scissor</button>
+			</div>
+			<p id="result">Result will be displayed here</p>
+		</div>
+		<button id="refresh" onclick="refresh()">New Game</button>
+	</div>
+	<script src="rcs.js"></script>
+</body>
+</html>
